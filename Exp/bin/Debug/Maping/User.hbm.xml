@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="Exp.Base" 
+                   assembly="Exp">
+  <class name="User" table="users">
+    <id name="Id">
+      <generator class="identity"/>
+    </id>
+    <property name="CreateDate"/>
+    <property name="Login"/>
+    <property name="Password"/>
+    <property name="FullName"/>
+    <property name="IsAdmin"/>    
+  </class>
+</hibernate-mapping>
